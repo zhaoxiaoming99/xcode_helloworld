@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController{
+    UITextField *tfUserName;
+    UITextField *tfPWD;
+}
+@property (nonatomic, retain) IBOutlet UITextField *tfUserName;
+@property (nonatomic, retain) IBOutlet UITextField *tfPWD;
+
+- (IBAction) userLogin:(id)obj;
+- (IBAction) pushEvent:(id)sender;
 
 @end
+
 
