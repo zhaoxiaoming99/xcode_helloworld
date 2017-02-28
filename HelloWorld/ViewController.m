@@ -65,10 +65,6 @@
     tfUserName.text = @"Hello";
 }
 
-- (IBAction)pushEvent:(id)sender {
-    //TODO
-}
-
 - (IBAction) returnToMainScene:(UIStoryboardSegue *)unwindSegue{
     //TODO
 }
