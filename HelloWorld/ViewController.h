@@ -10,14 +10,16 @@
 
 
 @interface ViewController : UIViewController{
-    UITextField *tfUserName;
-    UITextField *tfPWD;
+//    UITextField *tfUserName;
+//    UITextField *tfPWD;
 }
 @property (nonatomic, retain) IBOutlet UITextField *tfUserName;
 @property (nonatomic, retain) IBOutlet UITextField *tfPWD;
+@property (nonatomic, strong) IBOutlet UITextField *myTextbox;
 
 - (IBAction) userLogin:(id)obj;
 - (IBAction) pushEvent:(id)sender;
+- (IBAction) returnToMainScene:(UIStoryboardSegue *)unwindSegue;
 
 @end
 

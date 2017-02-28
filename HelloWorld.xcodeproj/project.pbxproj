@@ -13,6 +13,17 @@
 		7212A59B1E33021300A233D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7212A5991E33021300A233D9 /* Main.storyboard */; };
 		7212A59D1E33021300A233D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7212A59C1E33021300A233D9 /* Assets.xcassets */; };
 		7212A5A01E33021300A233D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7212A59E1E33021300A233D9 /* LaunchScreen.storyboard */; };
+		725BE3EF1E4B104B00DDD72B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5971E33021300A233D9 /* ViewController.m */; };
+		725BE3F01E4B104B00DDD72B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5941E33021300A233D9 /* AppDelegate.m */; };
+		725BE3F11E4B104B00DDD72B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5911E33021300A233D9 /* main.m */; };
+		725BE3F41E4B104B00DDD72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7212A59E1E33021300A233D9 /* LaunchScreen.storyboard */; };
+		725BE3F51E4B104B00DDD72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7212A59C1E33021300A233D9 /* Assets.xcassets */; };
+		725BE3F61E4B104B00DDD72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7212A5991E33021300A233D9 /* Main.storyboard */; };
+		725BE3FE1E4B150E00DDD72B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725BE3FD1E4B150E00DDD72B /* MapKit.framework */; };
+		725BE4001E4B159500DDD72B /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725BE3FF1E4B159500DDD72B /* LaunchScreen2.storyboard */; };
+		725BE4011E4B159500DDD72B /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725BE3FF1E4B159500DDD72B /* LaunchScreen2.storyboard */; };
+		72CD7EA51E6452A60098C7A2 /* ViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CD7EA41E6452A60098C7A2 /* ViewTwo.m */; };
+		72DD0EE01E63338800DC3AC5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD0EDF1E63338800DC3AC5 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +37,26 @@
 		7212A59C1E33021300A233D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7212A59F1E33021300A233D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7212A5A11E33021300A233D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725BE3FA1E4B104B00DDD72B /* HelloWorld_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		725BE3FB1E4B104C00DDD72B /* HelloWorld copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HelloWorld copy-Info.plist"; path = "/Users/xiaoming.zhao/Desktop/HelloWorld/HelloWorld copy-Info.plist"; sourceTree = "<absolute>"; };
+		725BE3FD1E4B150E00DDD72B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		725BE3FF1E4B159500DDD72B /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
+		72CD7EA31E64525D0098C7A2 /* ViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTwo.h; sourceTree = "<group>"; };
+		72CD7EA41E6452A60098C7A2 /* ViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTwo.m; sourceTree = "<group>"; };
+		72DD0EDF1E63338800DC3AC5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7212A58A1E33021300A233D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DD0EE01E63338800DC3AC5 /* AVFoundation.framework in Frameworks */,
+				725BE3FE1E4B150E00DDD72B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725BE3F21E4B104B00DDD72B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +71,8 @@
 			children = (
 				7212A58F1E33021300A233D9 /* HelloWorld */,
 				7212A58E1E33021300A233D9 /* Products */,
+				725BE3FB1E4B104C00DDD72B /* HelloWorld copy-Info.plist */,
+				725BE3FC1E4B150E00DDD72B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7212A58D1E33021300A233D9 /* HelloWorld.app */,
+				725BE3FA1E4B104B00DDD72B /* HelloWorld_test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,13 +90,16 @@
 			children = (
 				7212A5931E33021300A233D9 /* AppDelegate.h */,
 				7212A5941E33021300A233D9 /* AppDelegate.m */,
+				7212A59C1E33021300A233D9 /* Assets.xcassets */,
+				7212A5A11E33021300A233D9 /* Info.plist */,
+				7212A59E1E33021300A233D9 /* LaunchScreen.storyboard */,
+				725BE3FF1E4B159500DDD72B /* LaunchScreen2.storyboard */,
+				7212A5991E33021300A233D9 /* Main.storyboard */,
+				7212A5901E33021300A233D9 /* Supporting Files */,
 				7212A5961E33021300A233D9 /* ViewController.h */,
 				7212A5971E33021300A233D9 /* ViewController.m */,
-				7212A5991E33021300A233D9 /* Main.storyboard */,
-				7212A59C1E33021300A233D9 /* Assets.xcassets */,
-				7212A59E1E33021300A233D9 /* LaunchScreen.storyboard */,
-				7212A5A11E33021300A233D9 /* Info.plist */,
-				7212A5901E33021300A233D9 /* Supporting Files */,
+				72CD7EA31E64525D0098C7A2 /* ViewTwo.h */,
+				72CD7EA41E6452A60098C7A2 /* ViewTwo.m */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -77,6 +110,15 @@
 				7212A5911E33021300A233D9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		725BE3FC1E4B150E00DDD72B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0EDF1E63338800DC3AC5 /* AVFoundation.framework */,
+				725BE3FD1E4B150E00DDD72B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +141,23 @@
 			productReference = 7212A58D1E33021300A233D9 /* HelloWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
+		725BE3ED1E4B104B00DDD72B /* HelloWorld_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 725BE3F71E4B104B00DDD72B /* Build configuration list for PBXNativeTarget "HelloWorld_test" */;
+			buildPhases = (
+				725BE3EE1E4B104B00DDD72B /* Sources */,
+				725BE3F21E4B104B00DDD72B /* Frameworks */,
+				725BE3F31E4B104B00DDD72B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorld_test;
+			productName = HelloWorld;
+			productReference = 725BE3FA1E4B104B00DDD72B /* HelloWorld_test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +171,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7E7S437Q53;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					725BE3ED1E4B104B00DDD72B = {
+						DevelopmentTeam = 7E7S437Q53;
 					};
 				};
 			};
@@ -129,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				7212A58C1E33021300A233D9 /* HelloWorld */,
+				725BE3ED1E4B104B00DDD72B /* HelloWorld_test */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +206,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725BE4001E4B159500DDD72B /* LaunchScreen2.storyboard in Resources */,
 				7212A5A01E33021300A233D9 /* LaunchScreen.storyboard in Resources */,
 				7212A59D1E33021300A233D9 /* Assets.xcassets in Resources */,
 				7212A59B1E33021300A233D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725BE3F31E4B104B00DDD72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725BE4011E4B159500DDD72B /* LaunchScreen2.storyboard in Resources */,
+				725BE3F41E4B104B00DDD72B /* LaunchScreen.storyboard in Resources */,
+				725BE3F51E4B104B00DDD72B /* Assets.xcassets in Resources */,
+				725BE3F61E4B104B00DDD72B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +232,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7212A5981E33021300A233D9 /* ViewController.m in Sources */,
+				72CD7EA51E6452A60098C7A2 /* ViewTwo.m in Sources */,
 				7212A5951E33021300A233D9 /* AppDelegate.m in Sources */,
 				7212A5921E33021300A233D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725BE3EE1E4B104B00DDD72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725BE3EF1E4B104B00DDD72B /* ViewController.m in Sources */,
+				725BE3F01E4B104B00DDD72B /* AppDelegate.m in Sources */,
+				725BE3F11E4B104B00DDD72B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +384,32 @@
 			};
 			name = Release;
 		};
+		725BE3F81E4B104B00DDD72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7E7S437Q53;
+				INFOPLIST_FILE = "HelloWorld copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		725BE3F91E4B104B00DDD72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7E7S437Q53;
+				INFOPLIST_FILE = "HelloWorld copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.HelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +427,15 @@
 			buildConfigurations = (
 				7212A5A51E33021300A233D9 /* Debug */,
 				7212A5A61E33021300A233D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		725BE3F71E4B104B00DDD72B /* Build configuration list for PBXNativeTarget "HelloWorld_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725BE3F81E4B104B00DDD72B /* Debug */,
+				725BE3F91E4B104B00DDD72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

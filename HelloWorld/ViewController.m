@@ -7,23 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "ViewTwo.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 @synthesize tfUserName;
 @synthesize tfPWD;
+@synthesize myTextbox;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     tfUserName.text = @"Hello";
     tfPWD.text = @"World";
+    myTextbox.text = @"Crazy!!!";
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ViewTwo *view2 = [segue destinationViewController];
+    view2.view2LabelText = myTextbox.text;
+    NSLog(@"prepareForSegue: %@", myTextbox.text);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,12 +39,41 @@
     NSString *username = tfUserName.text;
     NSString *pwd = [tfPWD text];
     NSString *message = [NSString stringWithFormat:@"用户名：%@ 密码：%@", username, pwd ];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Information" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"HelloWorld" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self okAction];
+    }];
+    UIAlertAction *resetAction = [UIAlertAction actionWithTitle:@"重置" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        [self resetAction];
+    }];
+
+    [alertController addAction:resetAction];
+    [alertController addAction:okAction];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+- (void)okAction {
+    tfUserName.text = @"OK";
+}
+
+- (void)resetAction {
+    tfUserName.text = @"Hello";
 }
 
 - (IBAction)pushEvent:(id)sender {
-    
+    //TODO
 }
+
+- (IBAction) returnToMainScene:(UIStoryboardSegue *)unwindSegue{
+    //TODO
+}
+
+
+
 
 @end
