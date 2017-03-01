@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720E03D11E65A5B10079C1D7 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 720E03D01E65A5B10079C1D7 /* Cities.plist */; };
+		720E03FB1E66ABA80079C1D7 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720E03FA1E66ABA80079C1D7 /* SimpleTableViewController.m */; };
 		7212A5921E33021300A233D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5911E33021300A233D9 /* main.m */; };
 		7212A5951E33021300A233D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5941E33021300A233D9 /* AppDelegate.m */; };
 		7212A5981E33021300A233D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212A5971E33021300A233D9 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720E03D01E65A5B10079C1D7 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		720E03F81E66AB450079C1D7 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		720E03FA1E66ABA80079C1D7 /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		7212A58D1E33021300A233D9 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7212A5911E33021300A233D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7212A5931E33021300A233D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		7212A59F1E33021300A233D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7212A5A11E33021300A233D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		725BE3FA1E4B104B00DDD72B /* HelloWorld_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		725BE3FB1E4B104C00DDD72B /* HelloWorld copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HelloWorld copy-Info.plist"; path = "/Users/xiaoming.zhao/Desktop/HelloWorld/HelloWorld copy-Info.plist"; sourceTree = "<absolute>"; };
 		725BE3FD1E4B150E00DDD72B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		725BE3FF1E4B159500DDD72B /* LaunchScreen2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen2.storyboard; sourceTree = "<group>"; };
 		72CD7EA31E64525D0098C7A2 /* ViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTwo.h; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 			children = (
 				7212A58F1E33021300A233D9 /* HelloWorld */,
 				7212A58E1E33021300A233D9 /* Products */,
-				725BE3FB1E4B104C00DDD72B /* HelloWorld copy-Info.plist */,
 				725BE3FC1E4B150E00DDD72B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +91,7 @@
 		7212A58F1E33021300A233D9 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				720E03D01E65A5B10079C1D7 /* Cities.plist */,
 				7212A5931E33021300A233D9 /* AppDelegate.h */,
 				7212A5941E33021300A233D9 /* AppDelegate.m */,
 				7212A59C1E33021300A233D9 /* Assets.xcassets */,
@@ -100,6 +104,8 @@
 				7212A5971E33021300A233D9 /* ViewController.m */,
 				72CD7EA31E64525D0098C7A2 /* ViewTwo.h */,
 				72CD7EA41E6452A60098C7A2 /* ViewTwo.m */,
+				720E03F81E66AB450079C1D7 /* SimpleTableViewController.h */,
+				720E03FA1E66ABA80079C1D7 /* SimpleTableViewController.m */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			files = (
 				725BE4001E4B159500DDD72B /* LaunchScreen2.storyboard in Resources */,
 				7212A5A01E33021300A233D9 /* LaunchScreen.storyboard in Resources */,
+				720E03D11E65A5B10079C1D7 /* Cities.plist in Resources */,
 				7212A59D1E33021300A233D9 /* Assets.xcassets in Resources */,
 				7212A59B1E33021300A233D9 /* Main.storyboard in Resources */,
 			);
@@ -233,6 +240,7 @@
 			files = (
 				7212A5981E33021300A233D9 /* ViewController.m in Sources */,
 				72CD7EA51E6452A60098C7A2 /* ViewTwo.m in Sources */,
+				720E03FB1E66ABA80079C1D7 /* SimpleTableViewController.m in Sources */,
 				7212A5951E33021300A233D9 /* AppDelegate.m in Sources */,
 				7212A5921E33021300A233D9 /* main.m in Sources */,
 			);

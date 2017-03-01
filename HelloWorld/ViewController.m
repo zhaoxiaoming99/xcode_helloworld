@@ -25,9 +25,13 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    ViewTwo *view2 = [segue destinationViewController];
-    view2.view2LabelText = myTextbox.text;
-    NSLog(@"prepareForSegue: %@", myTextbox.text);
+    UIViewController *desc = [segue destinationViewController];
+    BOOL test = [desc isKindOfClass:[ViewTwo class]];
+    if (test) {
+        ViewTwo *view2 = [segue destinationViewController];
+        view2.view2LabelText = myTextbox.text;
+        NSLog(@"prepareForSegue: %@", myTextbox.text);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
